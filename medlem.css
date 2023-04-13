@@ -305,12 +305,32 @@ h4 {
 @media screen and (max-width:600px) {
     
   
-    .headerloga{ 
-        text-align: center;
+    .header{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+    .headerloga{
+        margin: 0; 
+    }
+    @keyframes bild {
+        0%{
+           
+        }
+        100%{
+           
+        }
+    }
+
     .underrubrik1 { 
         font-size: 12px;
     }
+    .navbox-label {
+        align-self: start;
+       margin-top: 30px;
+       margin-left: 20px;
+    }
+    
    
 .navbar li {
     text-align: center;
@@ -358,18 +378,17 @@ h4 {
 }
 .navbox-label span::after{
     top: 7px;
-    
 }
 
 .navbox {
     display: none;
 }
-
+/* ändringar i formuläret*/
 .form {
     margin: 10px;
     padding: 10px;
 }
-
+/*ändringar i footer*/
 .footerloga {
     display: none;
 }
