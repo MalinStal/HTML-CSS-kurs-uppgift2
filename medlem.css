@@ -8,45 +8,91 @@ min-height: 100vh;
 display: flex;
 flex-direction: column;
 }
-Animation loga
+/*Animation loga */
 .headerloga {
-    animation: 2s 2 alternate bild;
-    margin: 30;
-    border-radius: 30px;
-   
+    animation: 5s 2 alternate bild;
+    animation-delay: 8s;
 }
 
-@keyframes bild{
+@keyframes bild {
     0%{
        scale: 0.7;
         margin-left: 0;
     }
-    50% {
-        margin-left: 30%;
-        scale: 1.2;
+    40% {
+        margin-left: 46%;
+        scale: 1;
+        
     }
+    50% {
+        margin-left: 46%;
+        scale: 1;
+        
+    }
+    60% {
+        margin-left: 46%;
+        scale: 1;
+        
+    }
+
     100%{
-        margin-left: 60%;
+        margin-left: 90%;
         scale: 0.7;
     }
 }
-/* Animation underrubrik*/
+/* Animation rubriker*/
 
-.underrubrik1 {
-    animation: 8s infinite alternate underrubrik;
-    
+.rubrik1 {
+      animation: 3s 1 alternate rubrik;
+}
+@keyframes rubrik {
+    0%{
+        transform: scaleX(1);
+    }
+    40%{
+        transform: scaleX(1.52) scaleY(0.75);
+    }
+    55%{
+        transform: scaleX(0.85) scaleY(1.2);
+    }
+    65%{
+        transform: scaleX(1.29) scaleY(0.85);
+        
+    }
+    75%{
+        transform: scaleX(0.9)  scaleY(1.1);
+    }
+    90%{
+        transform: scaleX(1.05) scaleY(0.95);
+    }
+    100%{
+        transform: scaleX(1) scaleY(1);
+    }
+}
+.underrubrik1  {
+  
+    animation: 6s 1 alternate underrubrik;
    
 }
 
 @keyframes underrubrik{
-    0%{
+    0% {
        
-    }
-  
-    
-    100%{
-        
-    }
+     }
+     40% {
+         opacity: 0;
+        transform: translateX(-2000px);
+     }
+     60% {
+        opacity: 1;
+        transform: translateX(30px);
+     }
+     80% {
+        transform: translateX(-10px);
+     }
+     100% {
+        transform: translateX(0);
+     }
 } 
 :root{ /* färgtema för sidan */
     --background: rgba(15, 168, 51, 0.577);
@@ -279,7 +325,6 @@ h4 {
 }
 .navbar ul {display: block;}
 
- 
 .navbox:checked ~.navbar {
     display: block; 
 }
@@ -293,26 +338,27 @@ h4 {
 
     display: block;
     background-color: black;
-    height: 2px;
-    width: 2em;
+    height: 2.2px;
+    width: 2.2em;
     border-radius: 2px;
     position: absolute;
- 
+   
   
 }
-
 .navbox-label span::before,
 .navbox-label span::after{
     content: '';
+   
 }
 .navbox-label span::before
 {
- bottom: 7px;
+    bottom:7px;
+   
+   
 }
-
 .navbox-label span::after{
-
-top: 7px;
+    top: 7px;
+    
 }
 
 .navbox {
