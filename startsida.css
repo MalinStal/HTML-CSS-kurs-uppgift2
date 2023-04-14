@@ -9,7 +9,7 @@ display: flex;
 flex-direction: column;
 }
 
-/*
+
 .rubrik1 {
       animation: 3s 1 alternate rubrik;
 }
@@ -37,7 +37,7 @@ flex-direction: column;
         transform: scaleX(1) scaleY(1);
     }
 }
-*/
+
 :root{ /* färgtema för sidan */
     --background: rgba(15, 168, 51, 0.577);
     --background-head-foot: rgba(4, 111, 29, 0.789);
@@ -49,30 +49,38 @@ flex-direction: column;
 }
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     
 }
 .header{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-column-start: 1;
-    grid-column-end: span 3;
+    grid-column-end: 4;
     grid-row-start: 1;
-    grid-row-end: span 1;
+    grid-row-end: 1;
+
+ 
   
     background-color: var(--background);
 }
 .headerloga{
     grid-column-start: 1;
     grid-row-start: 1;
-    margin-top: 30px;
-    margin-left: 60px;
+    grid-row-end: span 2;
+}
+.headerloga img{
+    margin-top: 15px;
+    margin-left: 15px;
     border-radius: 250px;
 
 }
 .rubrik1 {
     grid-column-start: 2;
-    grid-row-start: 1;
-    text-align: center; 
+    grid-row-start: 1; 
+    text-align: center;
+    margin-top: 20px;
     text-transform: uppercase;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
@@ -80,9 +88,9 @@ flex-direction: column;
 .underrubrik1 {
     grid-column-start: 2;
     grid-row-start: 2;
-    text-align: center;
     margin-left: 10px;
     padding: 5px;
+    text-align: center;
     font-size: 15px;
     text-transform: uppercase;
     
@@ -99,6 +107,7 @@ flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    box-shadow: 2px 2px;
 }
 .navbar ul {
     display: flex;
@@ -134,25 +143,62 @@ grid-column-end: span 4;
     object-position: top center;
     object-fit: cover;
 }
+.headimg-h2 {
+    margin-top: -8em;
+    margin-bottom: 7em;
+    text-align: center;
+}
+
 .main 
 {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 3;  
+    
+}
+.sectionmain {
+    text-align: center;
+    margin: 70px;
+}
+/*tabel1 tävlings resultat */
+.table4 {
+    background-color: aliceblue;
+    width: 55em;
+    background-color: rgb(222, 222, 216);
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px 0.5px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+    
 
 }
-/*tabel skor*/
+.table4 thead th{
+    text-align: start;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.row {
+    width: 250px;
+}
+.table4 td,
+.table4 th {
+    border: 1px solid black;
+    padding: 12px;
+}
+/*tabe2 skor*/
 .table3 {
     border-collapse: collapse;
     background-color: aliceblue;
     width: 55em;
     background-color: rgb(222, 222, 216);
     border-radius: 5px;
-    /*box-shadow: 0px 10px 30px 5px; */
+    box-shadow: 0px 1px 3px 0.5px;
     margin: auto;
 
-
-    margin-bottom: 20px;
+margin-top: 30px;
+    margin-bottom: 30px;
 
 }
 
@@ -178,6 +224,7 @@ grid-column-end: span 4;
   grid-template-rows: 1fr;
     background-color: var(--background);
     padding: 20px;
+    box-shadow: 3px 3px 3px 3px;
     
 }
 
