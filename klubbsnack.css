@@ -154,7 +154,7 @@ grid-column-end: span 4;
  
     letter-spacing: 1px;  
 }
-.blockquote{
+.quote{
 
 position: relative;
  margin-top: -6.5em;
@@ -162,7 +162,7 @@ position: relative;
  word-spacing: 3px;
 
 }
-blockquote::before {
+.quote::before {
     content: open-quote;
    position: absolute;
     font-size: 6em;
@@ -175,15 +175,13 @@ blockquote::before {
     trots postion relativ på blockquot*/
 
 }
-blockquote::after {
+.quote::after {
     content: close-quote;
     position: absolute;
     font-size: 5em;
     opacity: .5;
     top: 1px;
-    
-    
-   
+ 
 }
 .main 
 {
@@ -196,17 +194,23 @@ blockquote::after {
     text-align: center;
     margin: 70px;
 }
+.sectionmain >article {
+    margin-bottom: 3rem;
+}
 /*tabel1 tävlings resultat */
 .table1 {
     background-color: aliceblue;
-    width: 70em;
+    width: 100%;
     background-color: rgb(222, 222, 216);
     border-radius: 5px;
     box-shadow: 0px 1px 3px 0.5px;
-    margin: auto;
+    margin: auto; 
+     table-layout: fixed;
+     word-wrap: break-word;
     margin-top: 30px;
     margin-bottom: 30px;
     border-collapse: collapse;
+  
    
     
 
@@ -218,7 +222,7 @@ blockquote::after {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .row {
-    width: 250px;
+    max-width: 250px;
 }
 .table1 td,
 .table1 th {
@@ -229,13 +233,14 @@ blockquote::after {
 .table2 {
     border-collapse: collapse;
     background-color: aliceblue;
-    width: 55em;
+    width: 100%;
     background-color: rgb(222, 222, 216);
     border-radius: 5px;
     box-shadow: 0px 1px 3px 0.5px;
     margin: auto;
-
-margin-top: 30px;
+    table-layout: fixed;
+    word-wrap: break-word;
+    margin-top: 30px;
     margin-bottom: 30px;
 
 }
@@ -298,7 +303,7 @@ h4 {
     margin-left: 40px;
     border-radius: 250px;
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:700px) {
     
   
     .header{ 
@@ -379,7 +384,10 @@ h4 {
 .navbox {
     display: none;
 }
-/* ändringar i formuläret*/
+/* ändringar i tabeler*/
+
+
+
 
 /*ändringar i footer*/
 .footerloga {
@@ -396,5 +404,27 @@ h4 {
 .footer li {
    font-size: small;
 
+}.table1 tbody td{
+    font-size: 15px;
+    padding: 1px;
+    margin: 1px;
+   
 }
+.table2 tbody td{
+    font-size: 15px;
+    padding: 1px;
+    margin: 1px;
+   
+}
+}
+@media screen and (max-width:1300px) {
+
+.table1 thead th{
+    font-size: 15px; 
+    
+}
+.table2 thead th{
+    font-size: 15px;
+}
+
 }
