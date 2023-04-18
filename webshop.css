@@ -4,38 +4,9 @@
     box-sizing: border-box;
 }
 body{
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-}
-
-
-.rubrik1 {
-      animation: 3s 1 alternate rubrik;
-}
-@keyframes rubrik {
-    0%{
-        transform: scaleX(1);
-    }
-    40%{
-        transform: scaleX(1.52) scaleY(0.75);
-    }
-    55%{
-        transform: scaleX(0.85) scaleY(1.2);
-    }
-    65%{
-        transform: scaleX(1.29) scaleY(0.85);
-        
-    }
-    75%{
-        transform: scaleX(0.9)  scaleY(1.1);
-    }
-    90%{
-        transform: scaleX(1.05) scaleY(0.95);
-    }
-    100%{
-        transform: scaleX(1) scaleY(1);
-    }
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 :root{ /* färgtema för sidan */
@@ -147,7 +118,27 @@ grid-column-end: span 4;
     margin-top: -8em;
     margin-bottom: 7em;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    
+
 }
+.headimg-p
+    { 
+
+    position: relative;
+    margin-top: -7em;
+    margin-bottom: 7em;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    font-size: larger;
+       
+    letter-spacing: 1px;  
+     font-size: 20px;
+     word-spacing: 3px;
+    
+    }
 
 .main 
 {
@@ -157,8 +148,41 @@ grid-column-end: span 4;
     
 }
 .sectionmain {
-    text-align: center;
-    margin: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.buttonimg
+{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
+   
+}
+.buttonimg:hover, .undertext:hover
+{
+   opacity: 0.7;
+
+}
+
+
+.undertext {
+    text-transform: uppercase ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+   text-align: center;
+   color: black;
+   
+
+}
+.sectionmain >div a {
+    text-decoration: none;
 }
 
 
@@ -207,7 +231,7 @@ h4 {
     margin-left: 40px;
     border-radius: 250px;
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:700px) {
     
   
     .header{ 
@@ -288,7 +312,7 @@ h4 {
 .navbox {
     display: none;
 }
-/* ändringar i formuläret*/
+
 
 /*ändringar i footer*/
 .footerloga {
