@@ -4,38 +4,9 @@
     box-sizing: border-box;
 }
 body{
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-}
-
-
-.rubrik1 {
-      animation: 3s 1 alternate rubrik;
-}
-@keyframes rubrik {
-    0%{
-        transform: scaleX(1);
-    }
-    40%{
-        transform: scaleX(1.52) scaleY(0.75);
-    }
-    55%{
-        transform: scaleX(0.85) scaleY(1.2);
-    }
-    65%{
-        transform: scaleX(1.29) scaleY(0.85);
-        
-    }
-    75%{
-        transform: scaleX(0.9)  scaleY(1.1);
-    }
-    90%{
-        transform: scaleX(1.05) scaleY(0.95);
-    }
-    100%{
-        transform: scaleX(1) scaleY(1);
-    }
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 :root{ /* färgtema för sidan */
@@ -136,8 +107,8 @@ flex-direction: column;
     display: none;
 }
 .headimg {
-grid-column-start: 1;
-grid-column-end: span 4;
+    grid-column-start: 1;
+    grid-column-end: span 4;
     width: 100%;
     height: 250px;
     object-position: top center;
@@ -145,7 +116,7 @@ grid-column-end: span 4;
 }
 .headimg-h2 {
     margin-top: -8em;
-    margin-bottom: 7em;
+    margin-bottom: 8em;
     text-align: center;
 }
 
@@ -159,8 +130,23 @@ grid-column-end: span 4;
 .sectionmain {
     text-align: center;
     margin: 70px;
+    
 }
+.sectionmain h3 {
+    text-transform: uppercase;
+    opacity: 0.8;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    margin: 20px;
+}
+.link-tosite {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
 
+
+}
 
 .footer 
 {

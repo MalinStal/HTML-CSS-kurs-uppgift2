@@ -8,95 +8,7 @@ min-height: 100vh;
 display: flex;
 flex-direction: column;
 }
-/*Animation loga */
-.headerloga {
-    animation: 5s 2 alternate bild;
-    animation-delay: 5s;
 
-}
-
-@keyframes bild {
-    0%{
-       scale: 1;
-    
-    }
-    50% {
-        margin-left:50%;
-        scale: 1.2;
-        
-    }
-    55% {
-        margin-left: 50%;
-        scale: 1.1;
-    }
-    60% {
-        margin-left: 50%;
-        scale: 1;
-        
-    }
-    65% {
-        margin-left: 50%;
-        scale: 1.1;
-    }
-
-    100%{
-        margin-left:50%;
-        scale: 1.2;
-       
-}
-}
-/* Animation rubriker*/
-
-.rubrik1 {
-      animation: 4s 1 alternate rubrik;
-}
-@keyframes rubrik {
-    0%{
-        transform: scaleX(1);
-    }
-    40%{
-        transform: scaleX(1.52) scaleY(0.75);
-    }
-    55%{
-        transform: scaleX(0.85) scaleY(1.2);
-    }
-    65%{
-        transform: scaleX(1.29) scaleY(0.85);
-        
-    }
-    75%{
-        transform: scaleX(0.9)  scaleY(1.1);
-    }
-    90%{
-        transform: scaleX(1.05) scaleY(0.95);
-    }
-    100%{
-        transform: scaleX(1) scaleY(1);
-    }
-}
-/*färg byte headimg rubrik*/
-.headimg-h2{
-    animation: 6s 5 alternate bild2;
-    animation-delay: 16s;
-    
-
-}
-
-@keyframes bild2 {
-    0%{
-       color: blue;
-    
-    }
-    50%{
-        color: purple;
-     
-     }
-
-    100%{
-        color: green;
-       
-}
-}
 
 :root{ /* färgtema för sidan */
     --background: rgba(15, 168, 51, 0.577);
@@ -219,7 +131,7 @@ flex-direction: column;
 
     position: relative;
     margin-top: -7em;
-    margin-bottom: 5em;
+    margin-bottom: 6em;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     color: aliceblue;
@@ -276,9 +188,6 @@ input
     border: 2px solid rgba(69, 177, 69, 0.39);
     box-shadow: 1px 1px 1px 1px rgba(69, 177, 69, 0.39);
 }
-input:hover {
-    scale: 1.05;
-}
 
 #gender {
  font-size: small;
@@ -313,7 +222,6 @@ input:hover {
 }
 .button:hover {
     background-color:  rgb(152, 231, 152);
-    scale: 1.1;
 }
 .footer 
 {

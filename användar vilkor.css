@@ -4,98 +4,9 @@
     box-sizing: border-box;
 }
 body{
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-}
-/*Animation loga */
-.headerloga {
-    animation: 5s 2 alternate bild;
-    animation-delay: 5s;
-
-}
-
-@keyframes bild {
-    0%{
-       scale: 1;
-    
-    }
-    50% {
-        margin-left:50%;
-        scale: 1.2;
-        
-    }
-    55% {
-        margin-left: 50%;
-        scale: 1.1;
-    }
-    60% {
-        margin-left: 50%;
-        scale: 1;
-        
-    }
-    65% {
-        margin-left: 50%;
-        scale: 1.1;
-    }
-
-    100%{
-        margin-left:50%;
-        scale: 1.2;
-       
-}
-}
-/* Animation rubriker*/
-
-.rubrik1 {
-      animation: 4s 1 alternate rubrik;
-}
-@keyframes rubrik {
-    0%{
-        transform: scaleX(1);
-    }
-    40%{
-        transform: scaleX(1.52) scaleY(0.75);
-    }
-    55%{
-        transform: scaleX(0.85) scaleY(1.2);
-    }
-    65%{
-        transform: scaleX(1.29) scaleY(0.85);
-        
-    }
-    75%{
-        transform: scaleX(0.9)  scaleY(1.1);
-    }
-    90%{
-        transform: scaleX(1.05) scaleY(0.95);
-    }
-    100%{
-        transform: scaleX(1) scaleY(1);
-    }
-}
-/*färg byte headimg rubrik*/
-.headimg-h2{
-    animation: 6s 5 alternate bild2;
-    animation-delay: 16s;
-    
-
-}
-
-@keyframes bild2 {
-    0%{
-       color: blue;
-    
-    }
-    50%{
-        color: purple;
-     
-     }
-
-    100%{
-        color: green;
-       
-}
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 :root{ /* färgtema för sidan */
@@ -103,17 +14,16 @@ flex-direction: column;
     --background-head-foot: rgba(4, 111, 29, 0.789);
    --background-form:  rgba(97, 217, 97, 0.607);  
    --hover-link:  rgba(7, 83, 3, 0.668);
-
+   
     --text-color: rgba(7, 7, 7, 0.76);
     
 }
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     
-}  
-
+}
 .header{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -122,6 +32,8 @@ flex-direction: column;
     grid-row-start: 1;
     grid-row-end: 1;
 
+ 
+  
     background-color: var(--background);
 }
 .headerloga{
@@ -166,7 +78,7 @@ flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-   
+    box-shadow: 2px 2px;
 }
 .navbar ul {
     display: flex;
@@ -194,126 +106,55 @@ flex-direction: column;
 .navbox {
     display: none;
 }
-#headimg {
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
 .headimg {
-        width: 100%;
-        height: 250px;
-        object-position: top center;
-        object-fit: cover;
-    }
-    .headimg-h2 {
-        position: relative;
-        margin-top: -8em;
-        margin-bottom: 7em;
-        text-align: center;
-        font-family: 'Times New Roman', Times, serif;
-        color: aliceblue;
-       
-        letter-spacing: 1px;  
-    }
-    .headimg-p
-    { 
-
-    position: relative;
-    margin-top: -7em;
-    margin-bottom: 5em;
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    width: 100%;
+    height: 250px;
+    object-position: top center;
+    object-fit: cover;
+}
+.headimg-h2 {
+    margin-top: -8em;
+    margin-bottom: 8em;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    color: aliceblue;
-    font-size: larger;
-       
-    letter-spacing: 1px;  
-     font-size: 20px;
-     word-spacing: 3px;
-    
-    }
-   .headimg-p strong {
-    font-weight: lighter;
-   }
+}
 
 .main 
 {
     grid-column-start: 1;
     grid-column-end: 4;
-    grid-row-start: 4;
-    color: var(--text-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    grid-row-start: 3;  
     
-
 }
-
-.form {
-   
-    background-color: var(--background-form);
-    width: 700px;
-    margin-bottom: 70px;
-    padding: 30px;
-   font-size: 20px;
-   text-align: center;
-   border: 0.5px solid black; 
-   color: var(--text-color);
-   box-shadow: 1px 1px 1px 1px;
-}
-.form label:hover{
-    color: var(--hover-link);
-}
-
-input,
- .label {
+.sectionmain {
+    text-align: center;
+    margin: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border: 1px solid black;
     
-    width: 100%;
-    padding: 10px;
 }
-input
+.sectionmain h3, h4 {
+    text-transform: uppercase;
+    opacity: 0.8;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    
+}
+.sectionmain ul {
+    margin: 20px;
+    padding: 40px;
+ }
+ .sectionmain li {
+list-style-type: disc;
+text-align: left;
+}
+.sectionmain p 
 {
-   margin-top: 5px;
-    background-color: rgba(51, 194, 51, 0.205);
-    border: 2px solid rgba(69, 177, 69, 0.39);
-    box-shadow: 1px 1px 1px 1px rgba(69, 177, 69, 0.39);
-}
-input:hover {
-    scale: 1.05;
-}
-
-#gender {
- font-size: small;
- display: grid;
- grid-template-columns:  1fr 1fr 1fr 1fr;
-}
-.kvinna {
-  grid-column-start: 2;
-}
-.man {
-    grid-column-start: 3;
-  }
-  .användar-vilkor {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-   
-  }
-  .checkboxen {
-   width: 15px;
-   margin-left: 17px;
-  }
-
-.button{
-    
-    margin-top: 20px;
-    padding: 10px;
-    color: var(--text-color);
-    background-color: rgba(51, 194, 51, 0.205);
-    border: 2px solid rgba(69, 177, 69, 0.39);
-    box-shadow: 1px 1px 1px 1px rgba(69, 177, 69, 0.39);
-}
-.button:hover {
-    background-color:  rgb(152, 231, 152);
-    scale: 1.1;
+    padding: 40px;
+    font-family: 'Times New Roman', Times, serif;
 }
 .footer 
 {
@@ -324,12 +165,11 @@ input:hover {
   grid-template-rows: 1fr;
     background-color: var(--background);
     padding: 20px;
-    
-    box-shadow: 2px 2px 3px 3px;
+    box-shadow: 3px 3px 3px 3px;
     
 }
 
-.footer li {
+.footer li { 
     grid-column-start: 2;
     grid-row-start: 1;
     text-align: center;
@@ -361,27 +201,16 @@ h4 {
     margin-left: 40px;
     border-radius: 250px;
 }
-@media screen and (max-width:700px) {
+@media screen and (max-width:700px) /*phone weu*/
+{
     
   
     .header{ 
         display: flex;
         flex-direction: column;
         align-items: center;
-        box-shadow: 2px 1.5px;
     }
-    .headerloga{
-        margin: 0; 
-    }
-  
-    @keyframes bild {
-        0%{
-           
-        }
-        100%{
-           
-        }
-    }
+   
 
     .underrubrik1 { 
         font-size: 12px;
@@ -444,11 +273,12 @@ h4 {
 .navbox {
     display: none;
 }
-/* ändringar i formuläret*/
-.form {
+
+.sectionmain {
     margin: 10px;
-    padding: 10px;
+
 }
+
 /*ändringar i footer*/
 .footerloga {
     display: none;
