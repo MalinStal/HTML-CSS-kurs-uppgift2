@@ -198,7 +198,20 @@ grid-column-end: span 4;
     box-shadow: 3px 3px 3px 3px;
     
 }
+.socialamedier-link {
+    grid-row-start: 2;
+    grid-column-start: span 1;
+    padding: 10px;
+    margin-bottom: 0px;
 
+}
+.ruta {
+    padding: 7px;
+}
+.ruta:hover {
+    scale: 1.3;
+    opacity: .7;
+}
 .footer li { 
     grid-column-start: 2;
     grid-row-start: 1;
@@ -321,6 +334,7 @@ h4 {
 .footer {
     display: flex;
     flex-direction: column;
+    text-align: center;
   
 }
 .footer ul {

@@ -236,7 +236,20 @@ input
     box-shadow: 2px 2px 3px 3px;
     
 }
+.socialamedier-link {
+    grid-row-start: 2;
+    grid-column-start: span 1;
+    padding: 10px;
+    margin-bottom: 0px;
 
+}
+.ruta {
+    padding: 7px;
+}
+.ruta:hover {
+    scale: 1.3;
+    opacity: .7;
+}
 .footer li {
     grid-column-start: 2;
     grid-row-start: 1;
@@ -257,12 +270,14 @@ input
     text-decoration: none;
     text-transform: uppercase;
 }
-h4 {
+h4 
+{
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
-.footerloga {
+.footerloga 
+{
     grid-column-start: 1;
     grid-row-start: 1;
     margin-top: 20px;
@@ -356,6 +371,7 @@ h4 {
 .form {
     margin: 10px;
     padding: 10px;
+    margin-bottom: 40px;
 }
 /*ändringar i footer*/
 .footerloga {
@@ -364,6 +380,7 @@ h4 {
 .footer {
     display: flex;
     flex-direction: column;
+    text-align: center;
   
 }
 .footer ul {
