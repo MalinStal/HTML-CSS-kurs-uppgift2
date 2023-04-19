@@ -348,6 +348,10 @@ input:hover {
     border: 2px solid rgba(69, 177, 69, 0.39);
     box-shadow: 1px 1px 1px 1px rgba(69, 177, 69, 0.39);
 }
+.button a {
+    color: black;
+    text-decoration: none;
+}
 
 .button:hover {
     background-color: rgb(152, 231, 152);

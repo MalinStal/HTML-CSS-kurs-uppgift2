@@ -246,6 +246,13 @@ input {
     background-color: rgb(152, 231, 152);
 }
 
+.button a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
 .footer {
     position: sticky;
     top: 100%;
