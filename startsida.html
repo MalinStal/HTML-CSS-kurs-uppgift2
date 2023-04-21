@@ -30,11 +30,56 @@
         <li><a href="klubbsnack.html">klubb snack</a></li>
         <li><a href="webshop.html">webshop</a></li>
 
-        <li><a href="medlem.html">bli medlem</a></li>
+        <li class="open-button">bli medlem</li>
         <li><a href="loggain.html">logga in</a></li>
       </ul>
     </nav>
+    <dialog class="member-form">
+     
+    <form class="form" action="">
+      <button class="close-button button"><img src="bilder/kryss tunnlinje svart.png" alt="svart kryss" width="20px"></button>
+      <h2 class="medlem-form">Medlems formulär!</h2>
+      <div class="label">
+        <label for="namn">Namn</label>
+        <input type="text" namn="namn" id="namn" placeholder="Namn" >
+      </div>
+      <div class="label">
+        <label for="efternamn">Efternamn</label>
+        <input type="text" id="efternamn" placeholder="Efternamn" >
+      </div>
+      <div class="label">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Namn.efternamn@mail.com" >
+      </div>
+      <div class="label">
+        <label for="lösenord">Lösenord</label>
+        <input type="password" id="lösenord">
+      </div>
 
+      <div class="label">
+        <label for="födelsedag">födelsedag</label>
+        <input type="date" id="födelsedag">
+      </div>
+
+      <span class="label"> Välj kön </span> <br>
+      <div id="gender">
+        <label class="kvinna" for="kvinna">kvinna <input type="radio" id="kvinna" name="kön" value="kvinna"></label>
+
+        <label class="man" for="man">man <input type="radio" id="man" name="kön" value="man"></label>
+      </div>
+
+      <div class="användar-vilkor">
+        <label for="användar-vilkor">Jag godkänner <a href="användar vilkor.html" target="_blank">användar
+            vilkoren</a></label>
+        <input type="checkbox" namn="checkbox" id="användar-vilkor" class="checkboxen">
+      </div>
+      
+       <button class="button"> <a href="loggain.html"> bli medlem </a> </button>
+     
+
+</form>
+</dialog>
+<dialog  id="welcome-popup"><h4>Välkommen som medlem på Climbing Gear!</h4></dialog>
     <main class="main">
 
       <article>
@@ -131,7 +176,6 @@
           href="https://www.friluftsframjandet.se/lat-aventyret-borja/kunskap--guider/klattring/kom-igang-med-klattring-utomhus/">Klättra
           ute</a></li>
     </ul>
-
-
-
   </footer>
+  <script src="startsida.js"></script>
+</body>

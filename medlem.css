@@ -359,10 +359,9 @@ input:hover {
 }
 .close-button {
     margin-right: 100%;
-    padding-bottom: 0;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 4px;
+    
+    padding: 4px 4px 0px 4px;
+ 
 }
 .footer {
     position: sticky;
